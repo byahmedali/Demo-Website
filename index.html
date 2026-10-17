@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HCCDA – Tech Essentials Training</title>
+  <meta name="description" content="Build a solid foundation in cloud and tech essentials with the HCCDA – Tech Essentials training program.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="logo"><span class="logo-mark">&lt;/&gt;</span> HCCDA</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#contact" class="btn btn-sm">Enroll</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Training Program</p>
+          <h1>Master the <span class="gradient">Tech Essentials</span> for the cloud era</h1>
+          <p class="lead">A hands-on HCCDA training that takes you from core IT concepts to cloud, networking, and security fundamentals — and prepares you for certification.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">Register Now</a>
+            <a href="#about" class="btn btn-ghost">Learn More</a>
+          </div>
+          <ul class="stats">
+            <li><strong data-count="40">0</strong><span>Hours of training</span></li>
+            <li><strong data-count="25">0</strong><span>Hands-on labs</span></li>
+            <li><strong data-count="95">0</strong><span>% pass target</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card-float c1">☁️ Cloud Computing</div>
+          <div class="card-float c2">🔒 Security</div>
+          <div class="card-float c3">🌐 Networking</div>
+          <div class="orb"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About the Training</h2>
+        <p class="section-sub">HCCDA – Tech Essentials gives beginners and career-switchers the practical knowledge to start confidently in modern IT.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">🎯</div>
+            <h3>Certification Focused</h3>
+            <p>Structured around exam objectives with practice questions and mock tests.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🧪</div>
+            <h3>Hands-on Labs</h3>
+            <p>Learn by doing in guided lab environments that mirror real-world scenarios.</p>
+          </article>
+          <article class="card">
+            <div class="icon">👩‍🏫</div>
+            <h3>Expert Instructors</h3>
+            <p>Industry-experienced trainers provide mentoring and personalised feedback.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🚀</div>
+            <h3>Career Ready</h3>
+            <p>Build skills and a portfolio that open doors to cloud and IT roles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="section alt">
+      <div class="container">
+        <h2>What You'll Learn</h2>
+        <ol class="timeline">
+          <li><h3>Module 1 · IT Fundamentals</h3><p>Hardware, operating systems, and how modern systems work.</p></li>
+          <li><h3>Module 2 · Cloud Basics</h3><p>Cloud service models, virtualization, and core services.</p></li>
+          <li><h3>Module 3 · Networking &amp; Security</h3><p>Network essentials, access control, and best practices.</p></li>
+          <li><h3>Module 4 · Data &amp; Emerging Tech</h3><p>Databases, big data, AI, and exam preparation.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Get in Touch</h2>
+          <p class="section-sub left">Ready to start, or have questions? Send us a message and we'll reply within one business day.</p>
+          <ul class="contact-info">
+            <li>📧 training@example.com</li>
+            <li>📞 +1 (555) 010-2030</li>
+            <li>🕘 Mon–Fri, 9:00–17:00</li>
+          </ul>
+        </div>
+        <form id="contact-form" class="form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="2">
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option>Full training program</option>
+              <option>Weekend batch</option>
+              <option>Corporate training</option>
+              <option>Exam preparation only</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> HCCDA – Tech Essentials Training. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
